@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FACULTY PROFILE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'testapp/css/profile.css' %}">
+ 
+</head>
+<body>
+
+    <div class="header-banner text-center">
+        <h1>FACULTY PROFILE</h1>
+        <div class="breadcrumbs">
+          <a href="{% url 'home' %}" class="btn btn-outline-light nav-btn">HOME</a>
+          <a href="{% url 'students' %}" class="btn btn-outline-light nav-btn">STUDENTS</a>
+          <a href="{% url 'events' %}" class="btn btn-outline-light nav-btn">EVENTS</a>
+        </div>
+      </div>
+      
+
+<div class="faculty-container">
+ 
+  <div class="faculty-card">
+    <img src="{% static 'testapp/images/anu.jpg' %}" alt="Dr. Anu Taneja">
+    <div class="info">
+      <h4>Dr. Anu Taneja</h4>
+      <p>Associate Professor</p>
+      <p>Specialization: C++, Computer Graphics</p>
+    </div>
+  </div>
+
+  
+  <div class="faculty-card">
+    <img src="{% static 'testapp/images/sandeep.jpg' %}" alt="Mr. Sandeep Jain">
+    <div class="info">
+      <h4>Mr. Sandeep Jain</h4>
+      <p>Asstt. Professor</p>
+      <p>Specialization: Computer Networks</p>
+    </div>
+  </div>
+
+  <div class="faculty-card">
+    <img src="{% static 'testapp/images/smriti.jpg' %}" alt="Ms. Smriti Sharma">
+    <div class="info">
+      <h4>Ms. Smriti Sharma</h4>
+      <p>Assistant Professor</p>
+      <p>Specialization: Python</p>
+    </div>
+  </div>
+
+  <div class="faculty-card">
+    <img src="{% static 'testapp/images/akshit.jpg' %}" alt="Mr. Akshit Thakur">
+    <div class="info">
+      <h4>Mr. Akshit Thakur</h4>
+      <p>Asst. Professor</p>
+      <p>Specialization: Cyber Ethics, Cyber Security</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="{% static 'testapp/images/sonia.jpg' %}" alt="Ms. Sonia Batra">
+    <div class="info">
+      <h4>Ms. Sonia Batra</h4>
+      <p>Asstt. Professor</p>
+     <p>Specialization:-DATA STRUCTURE AND ALGORITHM</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="{% static 'testapp/images/meetendra.jpg' %}" alt="Mr. Meetender">
+    <div class="info">
+      <h4>Mr. Meetender</h4>
+      <p>Asstt. Professor</p>
+     <p>Specialization:-JAVA PRORGRAMMING</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="{% static 'testapp/images/alok.jpg' %}" alt="Mr. Alok Mishra">
+    <div class="info">
+      <h4>Mr Alok Mishra</h4>
+      <p>Asst. Professor</p>
+     <p>Specialization:-WEB DEV USING DJANGO AND PYTHON</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="{% static 'testapp/images/gomathy.jpg' %}" alt="Dr. Gomathy M">
+    <div class="info">
+      <h4>Dr.Gomathy M</h4>
+      <p>Asst. Professor</p>
+     <p>Specialization:-WEB TECHNOLOGY,COMPUTER ORGANISATION AND ARCHITECTURE</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="{% static 'testapp/images/mansi.jpg' %}" alt="Ms. Mansi Vats">
+    <div class="info">
+      <h4>Ms. Mansi Vats</h4>
+      <p>Asst. Professor</p>
+     <p>Specialization:-DBMS,FIT</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="{% static 'testapp/images/sanjana.jpg' %}" alt="Ms. Sanjana Gulia">
+    <div class="info">
+      <h4>Ms. Sanjana Gulia</h4>
+      <p>Asst. Professor</p>
+     <p>Specialization:-TECHNICAL COMMUNICATION AND LITERATURE</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="{% static 'testapp/images/preeti.jpg' %}" alt="Ms. Preeti Sharma">
+    <div class="info">
+      <h4>Ms. Preeti Sharma</h4>
+      <p>Asst. Professor</p>
+     <p>Specialization:-AI AND ML COMPUTING</p>
+    </div>
+  </div>
+  <div class="faculty-card">
+    <img src="{% static 'testapp/images/pallavi.jpg' %}" alt="Ms. Pallavi Bhatt">
+    <div class="info">
+      <h4>Ms. Pallavi Bhatt</h4>
+      <p>Asst. Professor</p>
+     <p>Specialization:-C++,OOPS</p>
+    </div>
+</div>
+<div class="faculty-card">
+    <img src="{% static 'testapp/images/harsh.jpg' %}" alt="Dr. Harsh Arora">
+    <div class="info">
+      <h4>Dr. Harsh Arora</h4>
+      <p>Asst. Professor</p>
+     <p>Specialization:-CORE PROGRAMMING LANGUAGES C++,DSA,SOFTWARE ENGINEERING</p>
+    </div>
+</div>
+<div class="faculty-card">
+    <img src="{% static 'testapp/images/kritika.jpg' %}" alt="Ms Kritika">
+    <div class="info">
+      <h4>Ms Kritika</h4>
+      <p>Asst. Professor</p>
+     <p>Specialization:-DATA SCIENCE AND MACHINE LEARNING</p>
+    </div>
+</div>
+</div>
+
+<a href="javascript:history.back()" class="btn btn-warning back-btn">← Back</a>
+
+</body>
+</html>
