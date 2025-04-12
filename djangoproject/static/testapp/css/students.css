@@ -1,0 +1,107 @@
+/* Base styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #f4f6fa, #e1eaf4);
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background: linear-gradient(to right, #001f4d, #003366);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  /* Filter section */
+  .filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 25px auto;
+    max-width: 900px;
+  }
+  
+  .filters input,
+  .filters select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    min-width: 180px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Students container */
+  .students-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+  
+  /* Student card */
+  .student-card {
+    background-color: #fff;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .student-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .student-card img {
+    width: 70%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .student-card h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #001f4d;
+  }
+  
+  .student-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Back button */
+  .back-btn {
+    display: block;
+    width: fit-content;
+    margin: 30px auto 50px;
+    padding: 12px 30px;
+    background-color: #001f4d;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-btn:hover {
+    background-color: #003366;
+  }
+  

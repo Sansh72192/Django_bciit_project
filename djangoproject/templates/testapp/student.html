@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Achievements</title>
+  <link rel="stylesheet" href="{% static 'testapp/css/students.css' %}">
+</head>
+<body>
+
+  <header class="header">
+    <h1>BCIIT Students</h1>
+    <div class="filters">
+      <input type="text" id="searchBar" placeholder="Search by name or achievement...">
+      <select id="departmentFilter">
+        <option value="">All Departments</option>
+        <option value="BCA">BCA</option>
+        <option value="MCA">MCA</option>
+        
+      </select>
+      <select id="yearFilter">
+        <option value="">All Years</option>
+        <option value="2025">2025</option>
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+      </select>
+    </div>
+  </header>
+
+  <div class="students-container" id="studentCards">
+    <div class="student-card" data-name="Ansh Singh" data-department="BCA" data-year="2023">
+      <img src="{% static 'testapp/images/an.jpg' %}" alt="Ansh Singh">
+      <h3>Ansh Singh</h3>
+      <p></p>
+      <p>Dept: BCA | Year: 2023</p>
+    </div>
+
+    <div class="student-card" data-name="Prabhkirat Singh" data-department="BCA" data-year="2023">
+      <img src="{% static 'testapp/images/p.jpg' %}" alt="Prabhkirat Singh">
+      <h3>Prabhkirat Singh</h3>
+      <p></p>
+      <p>Dept: BCA | Year: 2023</p>
+    </div>
+
+    <div class="student-card" data-name="Armaan Khanna" data-department="BCA" data-year="2023">
+      <img src="{% static 'testapp/images/ar.jpg' %}" alt="Armaan Khanna">
+      <h3>Armaan Khanna</h3>
+      <p></p>
+      <p>Dept: BCA | Year: 2023</p>
+    </div>
+ 
+  <div class="student-card" data-name="Shashwat Gupta" data-department="BCA" data-year="2023">
+    <img src="{% static 'testapp/images/shre.jpg' %}" alt="Shashwat Gupta">
+    <h3>Shashwat Gupta</h3>
+    <p></p>
+    <p>Dept: BCA | Year: 2023</p>
+  </div>
+</div>
+
+
+  <a href="javascript:history.back()" class="back-btn">← Back</a>
+
+ 
+
+</body>
+</html>

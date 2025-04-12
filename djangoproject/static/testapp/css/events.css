@@ -1,12 +1,39 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: url('../images/bciit.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
-    padding: 20px;
+    
     position: relative;
 }
-
+    .header {
+        text-align: center;
+        padding: 40px 20px 20px;
+        background: linear-gradient(to right, #001f4d, #003366);
+        color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      .nav-box {
+        
+        
+        margin: 20px auto;
+        justify-content: center;
+        align-items: center;
+     
+      }
+      .nav-btn {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 16px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      .nav-btn:hover {
+        background-color: white;
+        color: #001f4d;
+      }      
 body::before {
     content: "";
     position: fixed;
@@ -15,73 +42,78 @@ body::before {
     width: 100%;
     height: 100%;
     background: inherit;
-    filter: blur(8px);
+    filter: blur(10px) brightness(0.85);
     z-index: -1;
 }
-
-
 
 .title {
     text-align: center;
     color: #8B0000;
-    margin-bottom: 30px;
-    font-size: 2.5em;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .events-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .event-card {
-    background-color: white;
-    border: 1px solid #ccc;
+    background-color: #ffffffee;
     border-radius: 12px;
-    width: 300px;
-    padding: 16px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .event-card:hover {
-    transform: scale(1.03);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
 }
 
 .event-card img {
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 8px;
 }
 
 .event-card h3 {
-    color: #333;
-    margin-top: 15px;
+    color: #001f4d;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 16px;
+    margin-bottom: 8px;
 }
 
 .event-card p {
-    color: #555;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 16px 16px;
 }
 
-
+/* Back Button */
 .back-btn {
     display: block;
     width: fit-content;
-    margin: 30px auto 50px;
-    padding: 10px 25px;
+    margin: 40px auto;
+    padding: 12px 28px;
     background-color: #001f4d;
     color: white;
-    border-radius: 5px;
+    border-radius: 6px;
     font-weight: bold;
-    text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease;
-  }
-  
-  .back-btn:hover {
+}
+
+.back-btn:hover {
     background-color: #003366;
-    color: #fff;
-  }
-  
+}

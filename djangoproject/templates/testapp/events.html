@@ -9,7 +9,15 @@
 </head>
 <body>
 
-    <h1 class="title">BCIIT EVENTS</h1>
+    <header class="header">
+        <h1>BCIIT Events</h1>
+        <div class="nav-box">
+            <div class="nav-box">
+          <a href="{% url 'home' %}" class="btn btn-outline-light nav-btn">HOME</a>
+          <a href="{% url 'students' %}" class="btn btn-outline-light nav-btn">STUDENTS</a>
+          <a href="{% url 'events' %}" class="btn btn-outline-light nav-btn">EVENTS</a>
+        </div>
+      </header>
 
     <div class="events-container">
         <div class="event-card">
